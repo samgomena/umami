@@ -2,7 +2,7 @@
 require('dotenv').config();
 const { PrismaClient } = require('@prisma/client');
 const chalk = require('chalk');
-const { execSync } = require('child_process');
+// const { execSync } = require('child_process');
 const semver = require('semver');
 
 if (process.env.SKIP_DB_CHECK) {
@@ -81,15 +81,15 @@ async function checkV1Tables() {
   }
 }
 
-async function applyMigration() {
-  console.log(execSync('prisma migrate deploy').toString());
+// async function applyMigration() {
+//   console.log(execSync('prisma migrate deploy').toString());
 
-  success('Database is up to date.');
-}
+//   success('Database is up to date.');
+// }
 
 (async () => {
   let err = false;
-  for (let fn of [checkEnv, checkConnection, checkDatabaseVersion, checkV1Tables, applyMigration]) {
+  for (let fn of [checkEnv, checkConnection, checkDatabaseVersion, checkV1Tables]) {
     try {
       await fn();
     } catch (e) {
