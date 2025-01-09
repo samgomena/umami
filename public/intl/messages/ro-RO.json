@@ -11,7 +11,7 @@
       "value": "Acțiuni"
     }
   ],
-  "label.activity-log": [
+  "label.activity": [
     {
       "type": 0,
       "value": "Jurnal de activități"
@@ -35,10 +35,16 @@
       "value": "Adaugă membru"
     }
   ],
+  "label.add-step": [
+    {
+      "type": 0,
+      "value": "Adaugă pas"
+    }
+  ],
   "label.add-website": [
     {
       "type": 0,
-      "value": "Adăugare site web"
+      "value": "Adaugă site web"
     }
   ],
   "label.admin": [
@@ -75,12 +81,6 @@
     {
       "type": 0,
       "value": "Mediu"
-    }
-  ],
-  "label.average-visit-time": [
-    {
-      "type": 0,
-      "value": "Timp mediu de vizitare"
     }
   ],
   "label.back": [
@@ -149,6 +149,12 @@
       "value": "Șterge tot"
     }
   ],
+  "label.compare": [
+    {
+      "type": 0,
+      "value": "Compară"
+    }
+  ],
   "label.confirm": [
     {
       "type": 0,
@@ -171,6 +177,12 @@
     {
       "type": 0,
       "value": "Continuă"
+    }
+  ],
+  "label.count": [
+    {
+      "type": 0,
+      "value": "Număr"
     }
   ],
   "label.countries": [
@@ -215,6 +227,18 @@
       "value": "Creat"
     }
   ],
+  "label.created-by": [
+    {
+      "type": 0,
+      "value": "Creat de"
+    }
+  ],
+  "label.current": [
+    {
+      "type": 0,
+      "value": "Curent"
+    }
+  ],
   "label.current-password": [
     {
       "type": 0,
@@ -242,13 +266,13 @@
   "label.date": [
     {
       "type": 0,
-      "value": "Data"
+      "value": "Dată"
     }
   ],
   "label.date-range": [
     {
       "type": 0,
-      "value": "Interval de date"
+      "value": "Interval"
     }
   ],
   "label.day": [
@@ -260,7 +284,7 @@
   "label.default-date-range": [
     {
       "type": 0,
-      "value": "Interval de date implicit"
+      "value": "Interval implicit"
     }
   ],
   "label.delete": [
@@ -290,7 +314,7 @@
   "label.delete-website": [
     {
       "type": 0,
-      "value": "Ștergere site web"
+      "value": "Șterge site web"
     }
   ],
   "label.description": [
@@ -371,6 +395,18 @@
       "value": "Activare adresă URL de distribuire"
     }
   ],
+  "label.end-step": [
+    {
+      "type": 0,
+      "value": "Pas final"
+    }
+  ],
+  "label.entry": [
+    {
+      "type": 0,
+      "value": "URL de intrare"
+    }
+  ],
   "label.event": [
     {
       "type": 0,
@@ -387,6 +423,12 @@
     {
       "type": 0,
       "value": "Evenimente"
+    }
+  ],
+  "label.exit": [
+    {
+      "type": 0,
+      "value": "URL de ieșire"
     }
   ],
   "label.false": [
@@ -431,6 +473,12 @@
       "value": "Filtre"
     }
   ],
+  "label.first-seen": [
+    {
+      "type": 0,
+      "value": "Văzut pentru prima dată"
+    }
+  ],
   "label.funnel": [
     {
       "type": 0,
@@ -443,6 +491,24 @@
       "value": "Înțelege rata de conversie și rata de abandon a utilizatorilor."
     }
   ],
+  "label.goal": [
+    {
+      "type": 0,
+      "value": "Obiectiv"
+    }
+  ],
+  "label.goals": [
+    {
+      "type": 0,
+      "value": "Obiective"
+    }
+  ],
+  "label.goals-description": [
+    {
+      "type": 0,
+      "value": "Urmărește obiectivele de vizualizări și evenimente."
+    }
+  ],
   "label.greater-than": [
     {
       "type": 0,
@@ -453,6 +519,18 @@
     {
       "type": 0,
       "value": "Mai mare sau egal cu"
+    }
+  ],
+  "label.host": [
+    {
+      "type": 0,
+      "value": "Host"
+    }
+  ],
+  "label.hosts": [
+    {
+      "type": 0,
+      "value": "Hosts"
     }
   ],
   "label.insights": [
@@ -503,6 +581,18 @@
       "value": "Alătură-te echipei"
     }
   ],
+  "label.journey": [
+    {
+      "type": 0,
+      "value": "Traseu"
+    }
+  ],
+  "label.journey-description": [
+    {
+      "type": 0,
+      "value": "Înțelege cum navighează vizitatorii prin website."
+    }
+  ],
   "label.language": [
     {
       "type": 0,
@@ -549,6 +639,26 @@
       "value": " ore"
     }
   ],
+  "label.last-months": [
+    {
+      "type": 0,
+      "value": "Ultimele "
+    },
+    {
+      "type": 1,
+      "value": "x"
+    },
+    {
+      "type": 0,
+      "value": " luni"
+    }
+  ],
+  "label.last-seen": [
+    {
+      "type": 0,
+      "value": "Văzut ultima dată"
+    }
+  ],
   "label.leave": [
     {
       "type": 0,
@@ -589,6 +699,12 @@
     {
       "type": 0,
       "value": "Administrează"
+    }
+  ],
+  "label.manager": [
+    {
+      "type": 0,
+      "value": "Manager"
     }
   ],
   "label.max": [
@@ -757,6 +873,18 @@
       "value": "Parolă"
     }
   ],
+  "label.path": [
+    {
+      "type": 0,
+      "value": "Rută"
+    }
+  ],
+  "label.paths": [
+    {
+      "type": 0,
+      "value": "Rute"
+    }
+  ],
   "label.powered-by": [
     {
       "type": 0,
@@ -767,10 +895,40 @@
       "value": "name"
     }
   ],
+  "label.previous": [
+    {
+      "type": 0,
+      "value": "Anterior"
+    }
+  ],
+  "label.previous-period": [
+    {
+      "type": 0,
+      "value": "Perioda anterioară"
+    }
+  ],
+  "label.previous-year": [
+    {
+      "type": 0,
+      "value": "Anul anterior"
+    }
+  ],
   "label.profile": [
     {
       "type": 0,
       "value": "Profil"
+    }
+  ],
+  "label.properties": [
+    {
+      "type": 0,
+      "value": "Proprietăți"
+    }
+  ],
+  "label.property": [
+    {
+      "type": 0,
+      "value": "Proprietate"
     }
   ],
   "label.queries": [
@@ -881,6 +1039,24 @@
       "value": "Măsoară atractivitatea site-ului tău prin urmărirea frecvenței cu care utilizatorii se întorc."
     }
   ],
+  "label.revenue": [
+    {
+      "type": 0,
+      "value": "Venit"
+    }
+  ],
+  "label.revenue-description": [
+    {
+      "type": 0,
+      "value": "Urmărește venitul în timp."
+    }
+  ],
+  "label.revenue-property": [
+    {
+      "type": 0,
+      "value": "Revenue Property"
+    }
+  ],
   "label.role": [
     {
       "type": 0,
@@ -935,6 +1111,12 @@
       "value": "Selectează website"
     }
   ],
+  "label.session": [
+    {
+      "type": 0,
+      "value": "Sesiune"
+    }
+  ],
   "label.sessions": [
     {
       "type": 0,
@@ -959,6 +1141,18 @@
       "value": "O singură zi"
     }
   ],
+  "label.start-step": [
+    {
+      "type": 0,
+      "value": "Pas de început"
+    }
+  ],
+  "label.steps": [
+    {
+      "type": 0,
+      "value": "Pași"
+    }
+  ],
   "label.sum": [
     {
       "type": 0,
@@ -980,7 +1174,13 @@
   "label.team-id": [
     {
       "type": 0,
-      "value": "ID Echipa"
+      "value": "ID Echipă"
+    }
+  ],
+  "label.team-manager": [
+    {
+      "type": 0,
+      "value": "Manager echipă"
     }
   ],
   "label.team-member": [
@@ -1085,6 +1285,12 @@
       "value": "Cod de urmărire"
     }
   ],
+  "label.transactions": [
+    {
+      "type": 0,
+      "value": "Tranzacții"
+    }
+  ],
   "label.transfer": [
     {
       "type": 0,
@@ -1121,6 +1327,12 @@
       "value": "Vizitatori unici"
     }
   ],
+  "label.uniqueCustomers": [
+    {
+      "type": 0,
+      "value": "Clienți unici"
+    }
+  ],
   "label.unknown": [
     {
       "type": 0,
@@ -1131,6 +1343,12 @@
     {
       "type": 0,
       "value": "Fără titlu"
+    }
+  ],
+  "label.update": [
+    {
+      "type": 0,
+      "value": "Update"
     }
   ],
   "label.url": [
@@ -1151,6 +1369,12 @@
       "value": "Utilizator"
     }
   ],
+  "label.user-property": [
+    {
+      "type": 0,
+      "value": "Proprietatea utilizatorului"
+    }
+  ],
   "label.username": [
     {
       "type": 0,
@@ -1161,6 +1385,18 @@
     {
       "type": 0,
       "value": "Utilizatori"
+    }
+  ],
+  "label.utm": [
+    {
+      "type": 0,
+      "value": "UTM"
+    }
+  ],
+  "label.utm-description": [
+    {
+      "type": 0,
+      "value": "Urmărește campaniile tale cu parametri UTM."
     }
   ],
   "label.value": [
@@ -1193,10 +1429,28 @@
       "value": "Vizualizări"
     }
   ],
+  "label.views-per-visit": [
+    {
+      "type": 0,
+      "value": "Vizualizări per vizită"
+    }
+  ],
+  "label.visit-duration": [
+    {
+      "type": 0,
+      "value": "Timp mediu de vizitare"
+    }
+  ],
   "label.visitors": [
     {
       "type": 0,
       "value": "Vizitatori"
+    }
+  ],
+  "label.visits": [
+    {
+      "type": 0,
+      "value": "Vizite"
     }
   ],
   "label.website": [
@@ -1275,6 +1529,12 @@
       "pluralType": "cardinal",
       "type": 6,
       "value": "x"
+    }
+  ],
+  "message.collected-data": [
+    {
+      "type": 0,
+      "value": "Date colectate"
     }
   ],
   "message.confirm-delete": [

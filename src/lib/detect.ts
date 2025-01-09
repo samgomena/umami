@@ -2,9 +2,9 @@ import path from 'path';
 import { getClientIp } from 'request-ip';
 import { browserName, detectOS } from 'detect-browser';
 import isLocalhost from 'is-localhost-ip';
+import ipaddr from 'ipaddr.js';
 import maxmind from 'maxmind';
 import { safeDecodeURIComponent } from 'next-basics';
-
 import {
   DESKTOP_OS,
   MOBILE_OS,
@@ -67,6 +67,14 @@ function getRegionCode(country: string, region: string) {
   return region.includes('-') ? region : `${country}-${region}`;
 }
 
+function safeDecodeCfHeader(s: string | undefined | null): string | undefined | null {
+  if (s === undefined || s === null) {
+    return s;
+  }
+
+  return Buffer.from(s, 'latin1').toString('utf-8');
+}
+
 export async function getLocation(ip: string, req: NextApiRequestCollect) {
   // Ignore local ips
   if (await isLocalhost(ip)) {
@@ -75,9 +83,9 @@ export async function getLocation(ip: string, req: NextApiRequestCollect) {
 
   // Cloudflare headers
   if (req.headers['cf-ipcountry']) {
-    const country = safeDecodeURIComponent(req.headers['cf-ipcountry']);
-    const subdivision1 = safeDecodeURIComponent(req.headers['cf-region-code']);
-    const city = safeDecodeURIComponent(req.headers['cf-ipcity']);
+    const country = safeDecodeCfHeader(req.headers['cf-ipcountry']);
+    const subdivision1 = safeDecodeCfHeader(req.headers['cf-region-code']);
+    const city = safeDecodeCfHeader(req.headers['cf-ipcity']);
 
     return {
       country,
@@ -123,17 +131,45 @@ export async function getLocation(ip: string, req: NextApiRequestCollect) {
   }
 }
 
-export async function getClientInfo(req: NextApiRequestCollect, { screen }) {
+export async function getClientInfo(req: NextApiRequestCollect) {
   const userAgent = req.headers['user-agent'];
-  const ip = req.body.payload.ip || getIpAddress(req);
+  const ip = req.body?.payload?.ip || getIpAddress(req);
   const location = await getLocation(ip, req);
   const country = location?.country;
   const subdivision1 = location?.subdivision1;
   const subdivision2 = location?.subdivision2;
   const city = location?.city;
   const browser = browserName(userAgent);
-  const os = detectOS(userAgent);
-  const device = getDevice(screen, os);
+  const os = detectOS(userAgent) as string;
+  const device = getDevice(req.body?.payload?.screen, os);
 
   return { userAgent, browser, os, ip, country, subdivision1, subdivision2, city, device };
+}
+
+export function hasBlockedIp(req: NextApiRequestCollect) {
+  const ignoreIps = process.env.IGNORE_IP;
+
+  if (ignoreIps) {
+    const ips = [];
+
+    if (ignoreIps) {
+      ips.push(...ignoreIps.split(',').map(n => n.trim()));
+    }
+
+    const clientIp = getIpAddress(req);
+
+    return ips.find(ip => {
+      if (ip === clientIp) return true;
+
+      // CIDR notation
+      if (ip.indexOf('/') > 0) {
+        const addr = ipaddr.parse(clientIp);
+        const range = ipaddr.parseCIDR(ip);
+
+        if (addr.kind() === range[0].kind() && addr.match(range)) return true;
+      }
+    });
+  }
+
+  return false;
 }

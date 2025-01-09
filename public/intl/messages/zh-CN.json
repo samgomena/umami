@@ -11,7 +11,7 @@
       "value": "用户行为"
     }
   ],
-  "label.activity-log": [
+  "label.activity": [
     {
       "type": 0,
       "value": "活动日志"
@@ -33,6 +33,12 @@
     {
       "type": 0,
       "value": "添加成员"
+    }
+  ],
+  "label.add-step": [
+    {
+      "type": 0,
+      "value": "添加步骤"
     }
   ],
   "label.add-website": [
@@ -75,12 +81,6 @@
     {
       "type": 0,
       "value": "平均"
-    }
-  ],
-  "label.average-visit-time": [
-    {
-      "type": 0,
-      "value": "平均访问时间"
     }
   ],
   "label.back": [
@@ -149,6 +149,12 @@
       "value": "清除全部"
     }
   ],
+  "label.compare": [
+    {
+      "type": 0,
+      "value": "比较"
+    }
+  ],
   "label.confirm": [
     {
       "type": 0,
@@ -171,6 +177,12 @@
     {
       "type": 0,
       "value": "继续"
+    }
+  ],
+  "label.count": [
+    {
+      "type": 0,
+      "value": "统计"
     }
   ],
   "label.countries": [
@@ -219,6 +231,12 @@
     {
       "type": 0,
       "value": "创建者"
+    }
+  ],
+  "label.current": [
+    {
+      "type": 0,
+      "value": "目前"
     }
   ],
   "label.current-password": [
@@ -377,6 +395,18 @@
       "value": "启用共享链接"
     }
   ],
+  "label.end-step": [
+    {
+      "type": 0,
+      "value": "结束步骤"
+    }
+  ],
+  "label.entry": [
+    {
+      "type": 0,
+      "value": "入口 URL"
+    }
+  ],
   "label.event": [
     {
       "type": 0,
@@ -393,6 +423,12 @@
     {
       "type": 0,
       "value": "行为类别"
+    }
+  ],
+  "label.exit": [
+    {
+      "type": 0,
+      "value": "退出 URL"
     }
   ],
   "label.false": [
@@ -437,6 +473,12 @@
       "value": "筛选"
     }
   ],
+  "label.first-seen": [
+    {
+      "type": 0,
+      "value": "首次出现"
+    }
+  ],
   "label.funnel": [
     {
       "type": 0,
@@ -449,6 +491,24 @@
       "value": "了解用户的转换率和退出率。"
     }
   ],
+  "label.goal": [
+    {
+      "type": 0,
+      "value": "目标"
+    }
+  ],
+  "label.goals": [
+    {
+      "type": 0,
+      "value": "目标"
+    }
+  ],
+  "label.goals-description": [
+    {
+      "type": 0,
+      "value": "跟踪页面浏览量和事件的目标。"
+    }
+  ],
   "label.greater-than": [
     {
       "type": 0,
@@ -459,6 +519,18 @@
     {
       "type": 0,
       "value": "大于或等于"
+    }
+  ],
+  "label.host": [
+    {
+      "type": 0,
+      "value": "主机"
+    }
+  ],
+  "label.hosts": [
+    {
+      "type": 0,
+      "value": "主机"
     }
   ],
   "label.insights": [
@@ -509,6 +581,18 @@
       "value": "加入团队"
     }
   ],
+  "label.journey": [
+    {
+      "type": 0,
+      "value": "用户浏览轨迹"
+    }
+  ],
+  "label.journey-description": [
+    {
+      "type": 0,
+      "value": "了解用户如何浏览网站。"
+    }
+  ],
   "label.language": [
     {
       "type": 0,
@@ -555,6 +639,26 @@
       "value": " 小时"
     }
   ],
+  "label.last-months": [
+    {
+      "type": 0,
+      "value": "最近 "
+    },
+    {
+      "type": 1,
+      "value": "x"
+    },
+    {
+      "type": 0,
+      "value": " 个月"
+    }
+  ],
+  "label.last-seen": [
+    {
+      "type": 0,
+      "value": "最后出现"
+    }
+  ],
   "label.leave": [
     {
       "type": 0,
@@ -595,6 +699,12 @@
     {
       "type": 0,
       "value": "管理"
+    }
+  ],
+  "label.manager": [
+    {
+      "type": 0,
+      "value": "管理者"
     }
   ],
   "label.max": [
@@ -700,7 +810,7 @@
   "label.ok": [
     {
       "type": 0,
-      "value": "OK"
+      "value": "好的"
     }
   ],
   "label.os": [
@@ -767,6 +877,18 @@
       "value": "密码"
     }
   ],
+  "label.path": [
+    {
+      "type": 0,
+      "value": "Path"
+    }
+  ],
+  "label.paths": [
+    {
+      "type": 0,
+      "value": "Paths"
+    }
+  ],
   "label.powered-by": [
     {
       "type": 0,
@@ -781,10 +903,40 @@
       "value": " 提供支持"
     }
   ],
+  "label.previous": [
+    {
+      "type": 0,
+      "value": "先前"
+    }
+  ],
+  "label.previous-period": [
+    {
+      "type": 0,
+      "value": "上一时期"
+    }
+  ],
+  "label.previous-year": [
+    {
+      "type": 0,
+      "value": "上一年"
+    }
+  ],
   "label.profile": [
     {
       "type": 0,
       "value": "个人资料"
+    }
+  ],
+  "label.properties": [
+    {
+      "type": 0,
+      "value": "Properties"
+    }
+  ],
+  "label.property": [
+    {
+      "type": 0,
+      "value": "属性"
     }
   ],
   "label.queries": [
@@ -895,6 +1047,24 @@
       "value": "通过跟踪用户返回的频率来衡量网站的用户粘性。"
     }
   ],
+  "label.revenue": [
+    {
+      "type": 0,
+      "value": "收入"
+    }
+  ],
+  "label.revenue-description": [
+    {
+      "type": 0,
+      "value": "查看您的收入随时间的变化。"
+    }
+  ],
+  "label.revenue-property": [
+    {
+      "type": 0,
+      "value": "收入值"
+    }
+  ],
   "label.role": [
     {
       "type": 0,
@@ -949,6 +1119,12 @@
       "value": "选择网站"
     }
   ],
+  "label.session": [
+    {
+      "type": 0,
+      "value": "Session"
+    }
+  ],
   "label.sessions": [
     {
       "type": 0,
@@ -973,6 +1149,18 @@
       "value": "单日"
     }
   ],
+  "label.start-step": [
+    {
+      "type": 0,
+      "value": "开始步骤"
+    }
+  ],
+  "label.steps": [
+    {
+      "type": 0,
+      "value": "步骤"
+    }
+  ],
   "label.sum": [
     {
       "type": 0,
@@ -995,6 +1183,12 @@
     {
       "type": 0,
       "value": "团队 ID"
+    }
+  ],
+  "label.team-manager": [
+    {
+      "type": 0,
+      "value": "团队管理者"
     }
   ],
   "label.team-member": [
@@ -1099,6 +1293,12 @@
       "value": "跟踪代码"
     }
   ],
+  "label.transactions": [
+    {
+      "type": 0,
+      "value": "交易"
+    }
+  ],
   "label.transfer": [
     {
       "type": 0,
@@ -1135,6 +1335,12 @@
       "value": "独立访客"
     }
   ],
+  "label.uniqueCustomers": [
+    {
+      "type": 0,
+      "value": "独特客户"
+    }
+  ],
   "label.unknown": [
     {
       "type": 0,
@@ -1145,6 +1351,12 @@
     {
       "type": 0,
       "value": "未命名"
+    }
+  ],
+  "label.update": [
+    {
+      "type": 0,
+      "value": "更新"
     }
   ],
   "label.url": [
@@ -1165,6 +1377,12 @@
       "value": "用户"
     }
   ],
+  "label.user-property": [
+    {
+      "type": 0,
+      "value": "用户属性"
+    }
+  ],
   "label.username": [
     {
       "type": 0,
@@ -1175,6 +1393,18 @@
     {
       "type": 0,
       "value": "用户"
+    }
+  ],
+  "label.utm": [
+    {
+      "type": 0,
+      "value": "UTM"
+    }
+  ],
+  "label.utm-description": [
+    {
+      "type": 0,
+      "value": "通过UTM参数追踪您的广告活动。"
     }
   ],
   "label.value": [
@@ -1207,10 +1437,28 @@
       "value": "浏览量"
     }
   ],
+  "label.views-per-visit": [
+    {
+      "type": 0,
+      "value": "每次访问的浏览量"
+    }
+  ],
+  "label.visit-duration": [
+    {
+      "type": 0,
+      "value": "平均访问时间"
+    }
+  ],
   "label.visitors": [
     {
       "type": 0,
       "value": "访客"
+    }
+  ],
+  "label.visits": [
+    {
+      "type": 0,
+      "value": "访问次数"
     }
   ],
   "label.website": [
@@ -1269,6 +1517,12 @@
     {
       "type": 0,
       "value": " 人"
+    }
+  ],
+  "message.collected-data": [
+    {
+      "type": 0,
+      "value": "已收集的数据"
     }
   ],
   "message.confirm-delete": [
